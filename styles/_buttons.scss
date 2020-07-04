@@ -84,3 +84,14 @@
     background-color: $primary-shade;
   }
 }
+
+.btn {
+  isplay: inline-block;
+  font-weight: 400;
+  cursor: pointer;
+  color: #fff;
+  background-color: #003263;
+  border-color: #003263;
+  text-align: center;
+  vertical-align: middle;
+}

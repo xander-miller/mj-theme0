@@ -1,88 +1,168 @@
 <h1 class="visibility-hidden">{{ help_center.name }}</h1>
 
-<section id="main-content" class="section hero">
-  <div class="hero-inner">
-      <h2>Bonjour</h2>
-      <h2>{{t 'hello'}}</h2>
-    <h2 class="visibility-hidden">{{ t 'search' }}</h2>
-    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12" class="search-icon" aria-hidden="true">
-      <circle cx="4.5" cy="4.5" r="4" fill="none" stroke="currentColor"/>
-      <path stroke="currentColor" stroke-linecap="round" d="M11 11L7.5 7.5"/>
-    </svg>
-    {{search submit=false instant=settings.instant_search class='search search-full'}}
-  </div>
+
+<section class="jumbotron">
+    <div class="container">
+        <h2>Une plateforme d'accompagnement pour le personnel enseignant de langue française de l'Ontario</h2>
+        <div class="row">
+            <div class="col">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/yK4aAYHKAjg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="col">
+                <p>Tu enseignes dans une école de langue française de l’Ontario ? Une équipe en ligne est là pour t’appuyer.  Nous t’offrons un service personnalisé et confidentiel pour t’appuyer dans ton enseignement. </p>
+                <a href="#" class="btn btn-secondary btn-lg btn-block">Télécharger le dépliant</a>
+            </div>
+        </div>
+        <p>Que tu sois une enseignante ou un enseignant nouvellement qualifié(e), une suppléante ou un suppléant à long terme, un membre du personnel enseignant nouvellement arrivé en Ontario, ce service est pour toi.</p>
+        <span>Voici des exemples de thématiques pour lesquelles tu peux obtenir un soutien :</span>
+        <ul>
+            <li>La planification des activités d’apprentissage dans toutes les matières</li>
+            <li>La gestion de classe et le climat scolaire</li>
+            <li>L’évaluation du rendement de l’élève</li>
+            <li>Le curriculum de l’Ontario</li>
+            <li>L’appui aux élèves ayant des besoins particuliers</li>
+            <li>L’enseignement en milieu minoritaire et la culture des écoles de langue française</li>
+            <li>La communication avec les parents</li>
+            <li>La différenciation pédagogique</li>
+        </ul>
+    </div>
 </section>
 
-<div class="container">
-  <section class="section knowledge-base">
-    <h2 class="visibility-hidden">{{ t 'categories' }}</h2>
-    <section class="categories blocks">
-      <ul class="blocks-list">
-        {{#each categories}}
-          {{#if ../has_multiple_categories}}
-            <li class="blocks-item">
-              <a href='{{url}}' class="blocks-item-link">
-                <span class="blocks-item-title">{{name}}</span>
-                <span class="blocks-item-description">{{excerpt description}}</span>
-              </a>
-            </li>
-          {{else}}
-            {{#each sections}}
-              <li class="blocks-item">
-                <a href='{{url}}' class="blocks-item-link">
-                  <span class="blocks-item-title">
-                    {{name}}
-                  </span>
-                  <span class="blocks-item-description">{{excerpt description}}</span>
-                </a>
-              </li>
-            {{/each}}
-          {{/if}}
-        {{/each}}
-      </ul>
-      {{pagination}}
-    </section>
 
-    {{#if promoted_articles}}
-      <section class="articles">
-        <h2>{{t 'promoted_articles'}}</h2>
-        <ul class="article-list promoted-articles">
-          {{#each promoted_articles}}
-            <li class="promoted-articles-item">
-                <a href="{{url}}">
-                  {{title}}
 
-                  {{#if internal}}
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" viewBox="0 0 16 16" class="icon-lock" title="{{t 'internal'}}">
-                      <rect width="12" height="9" x="2" y="7" fill="currentColor" rx="1" ry="1"/>
-                      <path fill="none" stroke="currentColor" d="M4.5 7.5V4a3.5 3.5 0 017 0v3.5"/>
-                    </svg>
-                  {{/if}}
-                </a>
-            </li>
-          {{/each}}
-        </ul>
-      </section>
-    {{/if}}
-  </section>
+<section class="container">
+    <div>
+        <button type="button" class="btn btn-secondary">Courriel</button>
+        <button type="button" class="btn btn-secondary">Téléphone</button>
+        <button type="button" class="btn btn-secondary">Texto</button>
+        <button type="button" class="btn btn-secondary">Clavardage</button>
+    </div>
+    <div class="alert alert-dark" role="alert">Les heures d’ouverture sont les suivantes : le dimanche de 17 h à 21 h et du lundi au jeudi de 16 h à 21 h</div>
+    <h2>Utilise ton adresse courriel de ton conseil scolaire pour accéder à ton compte Moi j’enseigne !</h2>
+    <button type="button" class="btn btn-secondary">Connexion à mon compte</button>
+    <div class="card">
+        <div class="card-body">
+            <img src="https://placeimg.com/150/100/any"/>
+            <h3>Notre équipe</h3>
+            <p>L’équipe de Moi j’enseigne est composée, entre autres, d’enseignantes et d’enseignants chevronnés(es), de conseillères et conseillers pédagogiques, de personnes à la direction d’école.</p>
+            <a href="#">Connectez-vous à votre compte pour discuter avec eux! ></a>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <h3>Bannière capsules d'auto-formation</h3>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <h3>Enseigner en français, en Ontario</h3>
+            <p>lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+            <img src="https://placeimg.com/150/100/any" />
+            <a>Enseigner en français en Ontario ></a><img/>
+        </div>
+    </div>
+</section>
+<section class="jumbotron">
+    <div class="container">
+        <button type="button" class="btn btn-secondary"><</button>
+        <img src="https://placeimg.com/100/100/any"/>
+        <img src="https://placeimg.com/100/100/any"/>
+        <img src="https://placeimg.com/100/100/any"/>
+        <img src="https://placeimg.com/100/100/any"/>
+        <img src="https://placeimg.com/100/100/any"/>
+        <img src="https://placeimg.com/100/100/any"/>
+        <button type="button" class="btn btn-secondary">></button>
+    </div>
+</section>
+<!--  <section class="section knowledge-base">-->
+<!--    <h2 class="visibility-hidden">{{ t 'categories' }}</h2>-->
+<!--    <section class="categories blocks">-->
+<!--      <ul class="blocks-list">-->
+<!--        {{#each categories}}-->
+<!--          {{#if ../has_multiple_categories}}-->
+<!--            <li class="blocks-item">-->
+<!--              <a href='{{url}}' class="blocks-item-link">-->
+<!--                <span class="blocks-item-title">{{name}}</span>-->
+<!--                <span class="blocks-item-description">{{excerpt description}}</span>-->
+<!--              </a>-->
+<!--            </li>-->
+<!--          {{else}}-->
+<!--            {{#each sections}}-->
+<!--              <li class="blocks-item">-->
+<!--                <a href='{{url}}' class="blocks-item-link">-->
+<!--                  <span class="blocks-item-title">-->
+<!--                    {{name}}-->
+<!--                  </span>-->
+<!--                  <span class="blocks-item-description">{{excerpt description}}</span>-->
+<!--                </a>-->
+<!--              </li>-->
+<!--            {{/each}}-->
+<!--          {{/if}}-->
+<!--        {{/each}}-->
+<!--      </ul>-->
+<!--      {{pagination}}-->
+<!--    </section>-->
 
-  {{#if help_center.community_enabled}}
-    <section class="section home-section community">
-      <h2>{{t 'community'}}</h2>
-      {{#link 'community' class='community-link'}}
-        {{t 'join_conversation'}}
-      {{/link}}
+<!--    {{#if promoted_articles}}-->
+<!--      <section class="articles">-->
+<!--        <h2>{{t 'promoted_articles'}}</h2>-->
+<!--        <ul class="article-list promoted-articles">-->
+<!--          {{#each promoted_articles}}-->
+<!--            <li class="promoted-articles-item">-->
+<!--                <a href="{{url}}">-->
+<!--                  {{title}}-->
 
-      <div class="community-image"></div>
-    </section>
-  {{/if}}
+<!--                  {{#if internal}}-->
+<!--                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" viewBox="0 0 16 16" class="icon-lock" title="{{t 'internal'}}">-->
+<!--                      <rect width="12" height="9" x="2" y="7" fill="currentColor" rx="1" ry="1"/>-->
+<!--                      <path fill="none" stroke="currentColor" d="M4.5 7.5V4a3.5 3.5 0 017 0v3.5"/>-->
+<!--                    </svg>-->
+<!--                  {{/if}}-->
+<!--                </a>-->
+<!--            </li>-->
+<!--          {{/each}}-->
+<!--        </ul>-->
+<!--      </section>-->
+<!--    {{/if}}-->
+<!--  </section>-->
 
-  <section class="section home-section activity">
-    {{#if settings.show_recent_activity}}
-      {{recent_activity}}
-    {{/if}}
-  </section>
-</div>
+<!--  {{#if help_center.community_enabled}}-->
+<!--    <section class="section home-section community">-->
+<!--      <h2>{{t 'community'}}</h2>-->
+<!--      {{#link 'community' class='community-link'}}-->
+<!--        {{t 'join_conversation'}}-->
+<!--      {{/link}}-->
+
+<!--      <div class="community-image"></div>-->
+<!--    </section>-->
+<!--  {{/if}}-->
+
+<!--  <section class="section home-section activity">-->
+<!--    {{#if settings.show_recent_activity}}-->
+<!--      {{recent_activity}}-->
+<!--    {{/if}}-->
+<!--  </section>-->
+<!--</div>-->
 <!-- Start of moi-jenseigne Zendesk Widget script -->
-<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=cc861de1-26a2-4823-a7f1-fee3ccdac9b1"> </script>
+<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=cc861de1-26a2-4823-a7f1-fee3ccdac9b1">
+</script>
+<!--Bootstrap-->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+    zESettings = {
+        webWidget: {
+            contactForm: {
+                fields: [
+                    { id: 'description', prefill: { '*': 'My field text' } }
+                ]
+            }
+        }
+    };
+</script>
+
 <!-- End of moi-jenseigne Zendesk Widget script -->
+
+

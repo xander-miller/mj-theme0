@@ -397,4 +397,15 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
+
+  // Added JQuery
+  $( document ).ready(function() {
+    $('#request_subject').val('Product Registration Eric View');
+    $('#request_description').val('There is a new product registration. More for Eric.');
+
+    console.log( "ready!" );
+  });
 });
+
+
+
