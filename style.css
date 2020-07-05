@@ -4599,4 +4599,17 @@ html[dir="rtl"] .notification-left-aligned {
 li{
   list-style-type: square !important;
   list-style-position: inside !important;
+  font-family: 'Libre Franklin', sans-serif !important;
+}
+
+p{
+  font-family: 'Libre Franklin', sans-serif !important;
+}
+
+span{
+  font-family: 'Libre Franklin', sans-serif !important;
+}
+
+a{
+  font-family: 'Libre Franklin', sans-serif !important;
 }
