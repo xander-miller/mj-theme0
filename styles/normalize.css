@@ -181,3 +181,7 @@ template {
 [hidden] {
   display: none;
 }
+
+.mj-footer{
+  background-color: #333333 !important;
+}

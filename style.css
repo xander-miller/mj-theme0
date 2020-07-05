@@ -4584,3 +4584,19 @@ html[dir="rtl"] .notification-left-aligned {
 .dropdown-chevron-icon {
   vertical-align: middle;
 }
+
+.mj-footer{
+  background-color: #333333;
+  color: white;
+}
+
+.mj-flare{
+  background-color: #0F5A84 !important;
+  border-radius: 10px 0px !important;
+  border-color: #0F5A84 !important;
+}
+
+li{
+  list-style-type: square !important;
+  list-style-position: inside !important;
+}
