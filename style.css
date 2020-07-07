@@ -4590,10 +4590,20 @@ html[dir="rtl"] .notification-left-aligned {
   color: white;
 }
 
-.mj-flare{
+.mj-dark{
   background-color: #0F5A84 !important;
-  border-radius: 10px 0px !important;
   border-color: #0F5A84 !important;
+}
+
+.mj-em{
+  background-color: #00AED6 !important;
+  border-color: #00AED6 !important;
+}
+
+.mj-flare{
+
+  border-radius: 10px 0px !important;
+
 }
 
 .bullets {

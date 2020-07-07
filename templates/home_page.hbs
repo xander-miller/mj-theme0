@@ -42,7 +42,7 @@
 </section>
 
 <section class="container">
-    <div class="row my-4">
+    <div class="row my-4" style="padding: 32px 0px">
         <div class="col d-flex align-items-center">
             <img src="{{asset 'list.jpg'}}" style="width: 500px"/>
         </div>
@@ -75,21 +75,28 @@
         </div>
     </section>
 </div>
+
 <section class="container">
-    <div class="card mt-4" style="background-color: #eeeeee">
-        <div class="card-body">
-            <div class="row align-items-center">
-                <div class="col-sm-2">
-                    <img src="https://placeimg.com/150/100/any" />
+
+    <div class="row align-items-center" style="margin: 64px 0px">
+        <div class="col">
+            <div class="d-flex flex-column align-items-end" style="height: 256px">
+                <div>
+                    <h3 class="text-right" style="font-family: 'Libre Franklin', sans-serif; font-weight: 500; color: #0F5A84">Notre équipe</h3>
+                    <p class="text-right">L’équipe de Moi j’enseigne est composée, entre autres, d’enseignantes et d’enseignants chevronnés(es), de conseillères et conseillers pédagogiques, de personnes à la direction d’école.</p>
                 </div>
-                <div class="col-sm-10">
-                    <h3 style="font-family: 'Libre Franklin', sans-serif; font-weight: 500; color: #0F5A84">Notre équipe</h3>
-                    <p>L’équipe de Moi j’enseigne est composée, entre autres, d’enseignantes et d’enseignants chevronnés(es), de conseillères et conseillers pédagogiques, de personnes à la direction d’école.</p>
-                    <a href="#">Connectez-vous à votre compte pour discuter avec eux! ></a>
+                <div class="mt-auto">
+                <button class="btn btn-primary mj-flare mj-em" href="#">Connectez-vous à votre compte pour discuter avec eux!</button>
                 </div>
             </div>
         </div>
+        <div class="col">
+            <img src="{{asset 'team.jpg'}}" style="width: 500px" />
+        </div>
     </div>
+
+</section>
+<section class="container">
     <div class="card mt-4" style="background-color: #eeeeee">
         <div class="card-body">
             <h3 style="font-family: 'Libre Franklin', sans-serif; font-weight: 500; color: #0F5A84">Bannière capsules d'auto-formation</h3>
