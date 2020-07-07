@@ -4602,6 +4602,10 @@ html[dir="rtl"] .notification-left-aligned {
   font-family: 'Libre Franklin', sans-serif !important;
 }
 
+.header-flare {
+  border-left: 20px solid #00AED6;
+}
+
 p{
   font-family: 'Libre Franklin', sans-serif !important;
 }
