@@ -4616,6 +4616,21 @@ html[dir="rtl"] .notification-left-aligned {
   border-left: 20px solid #00AED6;
 }
 
+.mj-background {
+  background: url($assets-formation-jpg);
+  background-size: 100%;
+  position: relative;
+}
+
+.mj-layer {
+  background-color: rgba(0, 50, 99, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 p{
   font-family: 'Libre Franklin', sans-serif !important;
 }
