@@ -4596,7 +4596,7 @@ html[dir="rtl"] .notification-left-aligned {
   border-color: #0F5A84 !important;
 }
 
-li .bullets{
+.bullets {
   list-style-type: square !important;
   list-style-position: inside !important;
   font-family: 'Libre Franklin', sans-serif !important;
