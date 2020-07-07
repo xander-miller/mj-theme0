@@ -4606,11 +4606,18 @@ html[dir="rtl"] .notification-left-aligned {
 
 }
 
-.bullets {
-  list-style-type: square !important;
-  list-style-position: inside !important;
-  font-family: 'Libre Franklin', sans-serif !important;
+.bullets li {
+  list-style: none;
+  margin: 0;
+  padding: 8px 0 8px 16px;
+  list-style: none;
+  background-image: url($assets-bullet-png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 10px;
 }
+
+
 
 .header-flare {
   border-left: 20px solid #00AED6;
