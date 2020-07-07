@@ -3,12 +3,12 @@
 
 <section class="jumbotron" style="background-color: #0F5A84; color: white; padding-bottom: 150px;">
     <div class="container">
-        <h2>Une plateforme d'accompagnement pour le personnel enseignant de langue française de l'Ontario</h2>
         <div class="row">
             <div class="col">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/yK4aAYHKAjg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="col">
+        <h4>Une plateforme d'accompagnement pour le personnel enseignant de langue française de l'Ontario</h4>
                 <p>Tu enseignes dans une école de langue française de l’Ontario ? Une équipe en ligne est là pour t’appuyer.  Nous t’offrons un service personnalisé et confidentiel pour t’appuyer dans ton enseignement. </p>
                 <a href="#" class="btn btn-light btn-lg btn-block" style="position: absolute; bottom: 0; margin-bottom: 20px;">Télécharger le dépliant</a>
             </div>
@@ -67,7 +67,7 @@
     <section class="container">
         <div class="d-flex flex-column" style="height: 160px">
             <div class="mb-auto">
-                <h2 class="text-center" style=" padding-left: 5px;font-family: 'Libre Franklin', sans-serif;font-weight: 600; color: white;">Utilise ton adresse courriel de ton conseil scolaire pour accéder à ton compte <span style="color: #00AED6">Moi j’enseigne !</span></h2>
+                <h2 class="text-center" style=" padding-left: 5px;font-family: 'Libre Franklin', sans-serif;font-weight: 600; color: white;">Utilise ton adresse courriel de ton conseil scolaire pour accéder à ton compte <span style="color: #00AED6; text-shadow: -1px -1px 0 #00BEE6, 1px -1px 0 #00BEE6, -1px 1px 0 #00BEE6, 1px 1px 0 #00BEE6;">Moi j’enseigne !</span></h2>
             </div>
             <div class="mt-auto mx-auto">
                 <button type="button" class="btn btn-light btn-lg btn-block px-4">Connexion à mon compte</button>
@@ -80,13 +80,14 @@
 
     <div class="row align-items-center" style="margin: 64px 0px">
         <div class="col">
-            <div class="d-flex flex-column align-items-end" style="height: 256px">
+            <div class="d-flex flex-column align-items-end" style="height: 240px">
                 <div>
                     <h3 class="text-right" style="font-family: 'Libre Franklin', sans-serif; font-weight: 500; color: #0F5A84">Notre équipe</h3>
                     <p class="text-right">L’équipe de Moi j’enseigne est composée, entre autres, d’enseignantes et d’enseignants chevronnés(es), de conseillères et conseillers pédagogiques, de personnes à la direction d’école.</p>
+                    <p class="text-right">Connectez-vous à votre compte pour discuter avec eux!</p>
                 </div>
                 <div class="mt-auto">
-                <button class="btn btn-primary mj-flare mj-em" href="#">Connectez-vous à votre compte pour discuter avec eux!</button>
+                <button class="btn btn-primary mj-flare mj-em" href="#">Rejoindre l'équipe</button>
                 </div>
             </div>
         </div>
@@ -110,34 +111,38 @@
 
 <section class="container">
 
-    <div class="card mt-4" style="background-color: #eeeeee">
-        <div class="card-body">
-            <div class="row align-items-center">
-                <div class="col-sm-10">
+    <div class="row align-items-center" style="margin: 64px 0px">
+        <div class="col">
+            <img src="{{asset 'enseigner-en-francais.jpg'}}" style="width: 500px" />
+        </div>
+        <div class="col">
+            <div class="d-flex flex-column align-items-start" style="height: 240px">
+                <div>
                     <h3 style="font-family: 'Libre Franklin', sans-serif; font-weight: 500; color: #0F5A84">Enseigner en français, en Ontario</h3>
                     <p>lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-                    <a href="#">Enseigner en français en Ontario ></a><img/>
                 </div>
-                <div class="col-sm-2">
-                    <img src="https://placeimg.com/150/100/any" class="card-img-right" />
+                <div class="mt-auto">
+                    <button class="btn btn-primary mj-flare mj-em" href="#">Visitez le site</button>
                 </div>
             </div>
         </div>
     </div>
+
 </section>
-<section class="jumbotron mt-4" style="margin-bottom: 0px">
+
+<section class="jumbotron mt-4" style="margin-bottom: 0px; background-color: #003263;">
     <div class="container">
         <div class="d-flex justify-content-center">
 
-        <button type="button" class="btn btn-secondary mr-4"><i class="material-icons">arrow_back_ios</i></button>
+        <button type="button" class="btn btn-light mr-4"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
 
-        <img class="mr-4" src="https://placeimg.com/100/100/any"/>
-        <img class="mr-4" src="https://placeimg.com/100/100/any"/>
-        <img class="mr-4" src="https://placeimg.com/100/100/any"/>
-        <img class="mr-4" src="https://placeimg.com/100/100/any"/>
-        <img class="mr-4" src="https://placeimg.com/100/100/any"/>
-        <img class="mr-4" src="https://placeimg.com/100/100/any"/>
-        <button type="button" class="btn btn-secondary"><i class="material-icons">arrow_forward_ios</i></button>
+        <img class="mr-4" style="background-color: white; width: 128px;" src="{{asset 'CSDCEO.png'}}"/>
+        <img class="mr-4" style="background-color: white; width: 128px;" src="{{asset 'CSPGNO.png'}}"/>
+        <img class="mr-4" style="background-color: white; width: 128px;" src="{{asset 'CSPNE.png'}}"/>
+        <img class="mr-4" style="background-color: white; width: 128px;" src="{{asset 'Mon-Avenir.png'}}"/>
+        <img class="mr-4" style="background-color: white; width: 128px;" src="{{asset 'Providence.png'}}"/>
+        <img class="mr-4" style="background-color: white; width: 128px;" src="{{asset 'Viamonde.png'}}"/>
+        <button type="button" class="btn btn-light"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
         </div>
     </div>
 </section>
